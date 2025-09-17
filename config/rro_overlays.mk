@@ -48,18 +48,18 @@ PRODUCT_PACKAGES += \
     PixelTelecomOverlay \
     PixelTelephonyProviderOverlay \
     PixelTetheringOverlay2021 \
-    SettingsGoogleOverlayEvolutionX \
+    SettingsGoogleOverlayHertzify \
     SystemUIGXOverlay \
     WildlifeSettingsVpnOverlay2022 \
     WildlifeSysuiVpnOverlay2022
 #    PixelDocumentsUIGoogleOverlay
 
-ifneq ($(filter panther cheetah lynx felix shiba husky akita tokay caiman komodo tegu frankel blazer mustang, $(LINEAGE_BUILD)),)
+ifneq ($(filter panther cheetah lynx felix shiba husky akita tokay caiman komodo tegu frankel blazer mustang, $(HERTZIFY_BUILD)),)
 PRODUCT_PACKAGES += \
     ClearCallingOverlay
 endif
 
-ifneq ($(filter flame coral redfin oriole raven panther cheetah lynx felix shiba husky akita tokay caiman komodo tegu frankel blazer mustang, $(LINEAGE_BUILD)),)
+ifneq ($(filter flame coral redfin oriole raven panther cheetah lynx felix shiba husky akita tokay caiman komodo tegu frankel blazer mustang, $(HERTZIFY_BUILD)),)
 PRODUCT_PACKAGES += \
     DreamlinerOverlay
 endif
